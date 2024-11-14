@@ -10,5 +10,13 @@ console.log(filePath);
 
 const myWord = params[2];
 
-console.log("Hello", myWord);
-console.log(`Hello ${myWord}`);
+if (myWord) {
+  console.log("Hello", myWord);
+  console.log(`Hello ${myWord}`);
+} else {
+  console.log("nessuna parola inserita come parametro");
+}
+
+// myWord
+//   ? console.log(`Hello ${myWord}`)
+//   : console.log("nessun parametro inserito");
